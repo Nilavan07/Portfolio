@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seranilavan | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="toggle-ball"></span>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo" data-text="NS">NS</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h4 class="subtitle animate__animated animate__fadeInUp">Hello, I'm</h4>
+                    <h1 class="title animate__animated animate__fadeInUp animate__delay-1s">Seranilavan Sivanesan</h1>
+                    <h2 class="profession animate__animated animate__fadeInUp animate__delay-2s">Web Developer</h2>
+                    <p class="description animate__animated animate__fadeInUp animate__delay-3s">I build exceptional digital experiences with modern technologies and clean code.</p>
+                    <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-4s">
+                        <a href="#projects" class="btn btn-primary btn-glow">View Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="social-links animate__animated animate__fadeInUp animate__delay-5s">
+                        <a href="https://www.linkedin.com/in/seranilavan-sivanesan-7b24a6244/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Nilavan07"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_nilavan_s/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/profile.jpg" alt="Seranilavan" class="profile-image">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About <span>Me</span></h2>
+                    <p class="section-subtitle">Professional Background</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="assets/about.jpg" alt="About Alex Carter" class="about-img">
+                            <div class="experience-badge">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <h3 class="about-title">Who Am I?</h3>
+                        <p class="about-text">As an aspiring web developer, I’m driven by a passion for crafting dynamic, user‑centric websites. Leveraging React, I build intuitive, responsive interfaces and stay ahead of evolving front‑end best practices through continuous learning and hands‑on experimentation.</p>
+                        <p class="about-text">On the back end, I’m honing my expertise in Node.js, Express.js, and MongoDB—augmented by Python scripting—to design and deploy scalable, high‑performance APIs. Guided by clean‑code principles, collaborative innovation, and thorough testing, I transform ambitious ideas into engaging, reliable web experiences.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Seranilavan</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">nilavan0710@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Toront,ON</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Availability:</span>
+                                <span class="info-value">Open to opportunities</span>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <a href="assets/resume.pdf" class="btn btn-primary" download>Download CV</a>
+                            <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My <span>Skills</span></h2>
+                    <p class="section-subtitle">Technical Proficiencies</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-tabs">
+                        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                        <button class="tab-btn" data-tab="backend">Backend</button>
+                        <button class="tab-btn" data-tab="tools">Tools</button>
+                    </div>
+                    <div class="skills-content">
+                        <!-- Frontend Skills -->
+                        <div class="skills-tab-content active" data-content="frontend">
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5/CSS3</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Backend Skills -->
+                        <div class="skills-tab-content" data-content="backend">
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">Php</span>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%;"></div>
+                                </div>
+                                </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     <!-- Tools Skills -->
+                     <div class="skills-tab-content" data-content="tools">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My <span>Projects</span></h2>
+                    <p class="section-subtitle">Recent Work</p>
+                </div>
+                <!-- <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div> -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/project1.jpg" alt="Ontario Parks">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Ontario Parks</h3>
+                                    <p class="project-description">Ontario Parks is seeking an innovative,end-to-end solution to enhance
+                                        the camping experience for newcomers and non-traditional campers.</p>
+                                    <div class="project-tech">
+                                        <span>Html</Html></span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Nilavan07/Ontario-Parks.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/project2.jpg" alt="FootBallHub">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">FootBallHub</h3>
+                                    <p class="project-description">Organize football teams, players, and matches for 
+                                        seamless management.</p>
+                                     <div class="project-tech">
+                                        <span>ASP.NET Core</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Nilavan07/Passion-Project.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/project3.jpg" alt="Event-Explorer">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Event Explorer</h3>
+                                    <p class="project-description">Event Explorer is a web application designed for users who are looking to discover local events, including concerts, sports games, festivals, and community gatherings.</p>
+                                    <div class="project-tech">
+                                        <span>React.js</span>
+                                        <span>Express.js</span>
+                                        <span>API</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Nilavan07/Event-Explorer.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                        <!-- Project 4 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/project4.jpg" alt="Endless Duck Parade">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="project-title">Endless Duck Parade</h3>
+                                    <p class="project-description">The "Endless Duck Parade" is a playful and purposefully useless website that provides 
+                                        endless entertainment</p>
+                                    <div class="project-tech">
+                                        <span>Html</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://duckparade.42web.io" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Nilavan07/Useless-Website.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+<section id="contact" class="contact-section section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Let's Work Together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-text">nilavan0710@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="contact-title">Phone</h3>
+                        <p class="contact-text">+1 (437) 463-5273</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3 class="contact-title">Location</h3>
+                        <p class="contact-text">Toronto, ON</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-glow">Send Message</button>
+                <div id="form-status" class="form-status"></div>
+              </form>
+        </div>
+    </div>
+</section>
+
+<head>
+    <!-- Add this before your other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS with your User ID
+      (function() {
+        emailjs.init('service_a0rjk63'); // Replace with your actual User ID
+      })();
+    </script>
+  </head>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">NS</div>
+                    <p class="footer-text">Creating digital excellence through clean code and innovative solutions.</p>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-title">Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/seranilavan-sivanesan-7b24a6244/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Nilavan07"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_nilavan_s/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Seranilavan. All rights reserved.</p>
+                <div class="footer-menu">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

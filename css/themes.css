@@ -1,0 +1,82 @@
+/* Dark Theme Styles */
+[data-theme="dark"] {
+  /* Dark Theme Colors */
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --accent-color: #4895ef;
+  --text-color: #f8f9fa;
+  --text-light: #adb5bd;
+  --bg-color: #212529;
+  --bg-secondary: #343a40;
+  --card-bg: #2b3035;
+  --border-color: #495057;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --overlay-color: rgba(33, 37, 41, 0.9);
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-toggle i {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.theme-toggle .fa-moon {
+  color: #f8f9fa;
+}
+
+.theme-toggle .fa-sun {
+  color: #ffd43b;
+}
+
+.toggle-ball {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  left: 3px;
+  transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .toggle-ball {
+  transform: translateX(30px);
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .project-card {
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .skill-bar {
+  background-color: var(--bg-color);
+}
+
+[data-theme="dark"] .timeline::before {
+  background-color: var(--text-light);
+}
+
+[data-theme="dark"] .timeline-content::before {
+  border-color: var(--bg-color);
+}
+
+[data-theme="dark"] .filter-btn.active,
+[data-theme="dark"] .tab-btn.active {
+  box-shadow: 0 0 10px rgba(67, 97, 238, 0.5);
+}
