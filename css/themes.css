@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 768px) {
-/* Dark Theme Styles */
+
 [data-theme="dark"] {
   /* Dark Theme Colors */
   --primary-color: #4361ee;
@@ -21,7 +21,7 @@
   --overlay-color: rgba(33, 37, 41, 0.9);
 }
 
-/* Theme Toggle Styles */
+
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -66,7 +66,7 @@
   transform: translateX(30px);
 }
 
-/* Dark theme specific adjustments */
+
 [data-theme="dark"] .project-card {
   border: 1px solid var(--border-color);
 }

@@ -1,4 +1,4 @@
-/* Animation Classes */
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -10,7 +10,7 @@
   transform: translateY(0);
 }
 
-/* Keyframe Animations */
+
 @keyframes float {
   0% {
       transform: translateY(0);
@@ -62,7 +62,7 @@
   }
 }
 
-/* Element Animations */
+
 .hero-image .image-wrapper {
   animation: float 6s ease-in-out infinite;
 }
@@ -76,7 +76,7 @@
   animation: wave 2s infinite;
 }
 
-/* Section Entrance Animations */
+
 #about .about-content {
   transition-delay: 0.1s;
 }
@@ -97,12 +97,12 @@
   transition-delay: 0.5s;
 }
 
-/* Project Card Hover Animation */
+
 .project-card {
   transition: all 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Skill Bar Animation */
+
 .skill-progress {
   transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
 }

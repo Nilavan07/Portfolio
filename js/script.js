@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile menu toggle
+  // Mobile menu 
   const mobileMenuBtn = document.querySelector('.mobile-menu');
   const navMenu = document.querySelector('.nav');
   const hamburger = document.querySelector('.hamburger');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.classList.toggle('active');
   });
   
-  // Close mobile menu when clicking a nav link
+  
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function() {
       navMenu.classList.remove('active');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Smooth scrolling for navigation links
+  
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Active nav link on scroll
+  
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
   
@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Project filtering
+  
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
   
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {
-      // Update active button
+      
       filterButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
       
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const tabId = this.getAttribute('data-tab');
       
-      // Update active button
+      
       tabButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
       
-      // Show corresponding content
+      t
       tabContents.forEach(content => {
         content.classList.remove('active');
         if (content.getAttribute('data-content') === tabId) {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Preloader
+  
   const preloader = document.querySelector('.preloader');
   
   window.addEventListener('load', function() {
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
   
-  // Animate elements on scroll
+  
   const animateElements = document.querySelectorAll('.animate-on-scroll');
   
   const animateOnScroll = function() {
@@ -127,24 +127,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   
-  // Run once on page load
+  
   animateOnScroll();
   
-  // Run on scroll
+  
   window.addEventListener('scroll', animateOnScroll);
   
-  // Initialize all elements as animate-on-scroll
+  
   document.querySelectorAll('section').forEach(section => {
     const content = section.querySelector('.container');
     if (content) {
       content.classList.add('animate-on-scroll');
     }
   });
-// ===== EMAILJS INITIALIZATION =====
-// Must be called before any emailjs.send() calls
-emailjs.init('sviRmpKsnEq38plf2'); // Get this from EmailJS Dashboard > Account > API Keys
+// EMAILJS INITIALIZATION 
+emailjs.init('sviRmpKsnEq38plf2');
 
-// ===== CONTACT FORM HANDLER =====
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('form-status');
 
@@ -152,26 +150,26 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get form elements
+    
     const submitBtn = this.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
     
-    // Show loading state
+    
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     formStatus.textContent = '';
     formStatus.className = 'form-status';
     
-    // Prepare form data - matches your template variables
+    
     const templateParams = {
-      name: contactForm.name.value,       // Matches {{name}} in template
-      email: contactForm.email.value,     // Matches {{email}} in template
-      subject: contactForm.subject.value || '(No subject)', // Matches {{subject}}
-      message: contactForm.message.value, // Matches {{message}} in template
-      time: new Date().toLocaleString()   // Matches {{time}} in template
+      name: contactForm.name.value,       
+      email: contactForm.email.value,     
+      subject: contactForm.subject.value || '(No subject)', 
+      message: contactForm.message.value, 
+      time: new Date().toLocaleString()   
     };
     
-    // Basic validation
+    
     if (!templateParams.name || !templateParams.email || !templateParams.message) {
       formStatus.textContent = 'Please fill all required fields';
       formStatus.classList.add('error');
@@ -180,17 +178,17 @@ if (contactForm) {
       return;
     }
     
-    // Send email using EmailJS
+    
     emailjs.send('service_a0rjk63', 'template_3vb5edq', templateParams)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         
-        // Success message
+        
         formStatus.textContent = 'Message sent successfully!';
         formStatus.classList.add('success');
         contactForm.reset();
         
-        // Hide success message after 5 seconds
+        
         setTimeout(() => {
           formStatus.textContent = '';
           formStatus.className = 'form-status';
@@ -198,7 +196,7 @@ if (contactForm) {
       }, function(error) {
         console.error('FAILED...', error);
         
-        // Detailed error handling
+        
         let errorMessage = 'Failed to send message. Please try again.';
         
         if (error.text.includes('Invalid user ID') || error.text.includes('Public Key is invalid')) {
@@ -215,7 +213,7 @@ if (contactForm) {
         formStatus.classList.add('error');
       })
       .finally(() => {
-        // Reset button state
+        
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
       });

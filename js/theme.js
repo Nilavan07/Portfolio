@@ -1,9 +1,9 @@
-// Theme Toggle Functionality
+
 const themeToggle     = document.querySelector('.theme-toggle');
 const themeToggleBall = document.querySelector('.toggle-ball');
 const html            = document.documentElement;
 
-// 1) On load: only apply saved or preferred dark theme on desktop
+
 const savedTheme = localStorage.getItem('theme') ||
                    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
@@ -14,9 +14,9 @@ if (window.innerWidth >= 768 && savedTheme === 'dark') {
   html.setAttribute('data-theme', 'light');
 }
 
-// 2) On click: bail out immediately if mobile
+
 themeToggle.addEventListener('click', function() {
-  if (window.innerWidth < 768) return;      // ← guard: do nothing on mobile
+  if (window.innerWidth < 768) return;      
 
   const currentTheme = html.getAttribute('data-theme');
   const newTheme     = currentTheme === 'light' ? 'dark' : 'light';
@@ -28,7 +28,7 @@ themeToggle.addEventListener('click', function() {
     newTheme === 'dark' ? 'translateX(30px)' : 'translateX(0)';
 });
 
-// Special effect for primary buttons (unchanged)
+
 const primaryButtons = document.querySelectorAll('.btn-primary');
 primaryButtons.forEach(button => {
   button.addEventListener('mouseenter', () => {

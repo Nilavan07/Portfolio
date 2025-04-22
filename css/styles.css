@@ -1,6 +1,6 @@
-/* Base Styles */
+
 :root {
-  /* Light Theme Colors */
+  
   --primary-color: #4361ee;
   --secondary-color: #3f37c9;
   --accent-color: #4895ef;
@@ -16,32 +16,32 @@
   --danger-color: #f72585;
   --warning-color: #f8961e;
 
-  /* Typography */
+  
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Open Sans', sans-serif;
   
-  /* Spacing */
+  
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
   
-  /* Border Radius */
+  
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-round: 50%;
   
-  /* Shadows */
+  
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
   --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.05);
   
-  /* Transitions */
+  
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
@@ -195,7 +195,7 @@ ul {
   }
 }
 
-/* Utility Classes */
+
 .text-center {
   text-align: center;
 }
@@ -216,7 +216,7 @@ ul {
 .mb-4 { margin-bottom: var(--space-lg); }
 .mb-5 { margin-bottom: var(--space-xl); }
 
-/* Header Styles */
+
 .header {
   position: fixed;
   top: 0;
@@ -303,7 +303,7 @@ ul {
   transition: all var(--transition-normal);
 }
 
-/* Hero Section */
+
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -524,7 +524,7 @@ ul {
   gap: var(--space-md);
 }
 
-/* Skills Section */
+
 .skills-container {
   margin-top: var(--space-lg);
 }
@@ -618,7 +618,7 @@ ul {
   }
 }
 
-/* Projects Section */
+
 .projects-filter {
   display: flex;
   justify-content: center;
@@ -846,7 +846,7 @@ ul {
   color: var(--primary-color);
 }
 
-/* Contact Section */
+
 .contact-content {
   display: flex;
   gap: var(--space-xl);
@@ -1090,7 +1090,7 @@ ul {
   }
 }
 
-/* Cursor Effects */
+
 .cursor {
   position: fixed;
   width: 20px;
@@ -1117,7 +1117,7 @@ ul {
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -1302,7 +1302,7 @@ ul {
   border: 1px solid rgba(231, 76, 60, 0.3);
 }
 
-/* Loading spinner */
+
 .fa-spinner {
   margin-right: 8px;
 }
