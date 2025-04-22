@@ -1,3 +1,10 @@
+@media (max-width: 767px) {
+  .theme-toggle {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
 /* Dark Theme Styles */
 [data-theme="dark"] {
   /* Dark Theme Colors */
@@ -79,4 +86,5 @@
 [data-theme="dark"] .filter-btn.active,
 [data-theme="dark"] .tab-btn.active {
   box-shadow: 0 0 10px rgba(67, 97, 238, 0.5);
+}
 }
