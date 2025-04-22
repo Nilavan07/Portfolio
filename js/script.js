@@ -68,17 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const filterValue = this.getAttribute('data-filter');
       
-      // Filter projects
-      projectCards.forEach(card => {
-        card.style.display = 'none';
-        
-        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-          card.style.display = 'block';
-          setTimeout(() => {
-            card.style.opacity = '1';
-          }, 50);
-        }
-      });
     });
   });
   
