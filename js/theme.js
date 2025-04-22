@@ -27,42 +27,7 @@ themeToggle.addEventListener('click', function() {
         themeToggleBall.style.transform = 'translateX(0)';
     }
 });
-
-// Cursor Effects
-const cursor = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
-
-if (cursor && cursorFollower) {
-    document.addEventListener('mousemove', function(e) {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-        
-        setTimeout(() => {
-            cursorFollower.style.left = e.clientX + 'px';
-            cursorFollower.style.top = e.clientY + 'px';
-        }, 100);
-    });
-    
-    // Cursor hover effects
-    const hoverElements = document.querySelectorAll('a, button, .project-card, .tab-btn, .filter-btn, .nav-link');
-    
-    hoverElements.forEach(element => {
-        element.addEventListener('mouseenter', function() {
-            cursor.style.transform = 'scale(2)';
-            cursorFollower.style.transform = 'scale(0.5)';
-            cursorFollower.style.backgroundColor = 'transparent';
-            cursorFollower.style.borderColor = 'var(--primary-color)';
-        });
-        
-        element.addEventListener('mouseleave', function() {
-            cursor.style.transform = 'scale(1)';
-            cursorFollower.style.transform = 'scale(1)';
-            cursorFollower.style.backgroundColor = 'transparent';
-            cursorFollower.style.borderColor = 'var(--primary-color)';
-        });
-    });
-    
-    // Special effect for primary buttons
+        // Special effect for primary buttons
     const primaryButtons = document.querySelectorAll('.btn-primary');
     
     primaryButtons.forEach(button => {
@@ -76,4 +41,3 @@ if (cursor && cursorFollower) {
             cursorFollower.style.borderColor = 'var(--primary-color)';
         });
     });
-}
