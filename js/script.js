@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
       tabButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
       
-      t
+      
       tabContents.forEach(content => {
         content.classList.remove('active');
         if (content.getAttribute('data-content') === tabId) {
